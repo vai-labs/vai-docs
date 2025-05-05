@@ -23,6 +23,10 @@ const config: Config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
+  markdown: {
+    mermaid: true,
+  },
+
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -64,6 +68,8 @@ const config: Config = {
     ],
   ],
 
+  themes: ['@docusaurus/theme-mermaid'],
+
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
@@ -76,15 +82,33 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'introductionSidebar',
           position: 'left',
-          label: 'Documentation',
+          label: 'Introduction',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'whitepaperSidebar',
+          position: 'left',
+          label: 'Whitepaper',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'guidelinesSidebar',
+          position: 'left',
+          label: 'Guidelines',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'developerSidebar',
+          position: 'left',
+          label: 'Developer',
         },
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Whitepaper',
+          label: 'Documentation',
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
