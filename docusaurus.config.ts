@@ -105,10 +105,23 @@ const config: Config = {
           label: 'Developer',
         },
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          type: 'dropdown',
+          label: 'More',
           position: 'left',
-          label: 'Documentation',
+          items: [
+            {
+              to: '/docs/appendix',
+              label: 'Appendix',
+            },
+            {
+              to: '/docs/intro',
+              label: 'Tutorial',
+            },
+            {
+              to: '/blog',
+              label: 'Blog',
+            },
+          ],
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
