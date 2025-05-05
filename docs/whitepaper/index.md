@@ -1,62 +1,28 @@
 ---
-title: Whitepaper
-sidebar_position: 1
+title: Preface
+description: Foreword – Ethan Ray
+sidebar_position: 0
 ---
 
-## Overview
+# Preface
 
-## Introduce
+> _“As artificial intelligence grows mighty, those who own the infrastructure grow mightier still. Yet the world cannot allow a handful of giants to dictate the fate of collective intelligence.”_  
+> — **Ethan Ray**
 
-## Value stream (Mermaid diagram)
+I write these lines at the height of an AI boom unmatched since humanity harnessed electricity. Colossal models are redefining creativity, manufacturing and education—while quietly consolidating power in the boardrooms of a few corporations. For them, **data** is crude oil, **models** are the wells, and **users** are worshippers obliged to accept the price, the terms, even the _definition_ of knowledge itself.
 
-```mermaid
-%%{ init: { 'flowchart': { 'rankDir': 'TB', 'nodeSpacing': 20, 'rankSpacing': 40 } } }%%
-flowchart TB
-  %% ---------- ACTORS -------------------------------------------------
-  subgraph Contributors
-    U1["Data&nbsp;Labeler"]
-    U2["Model&nbsp;Fine-Tuner"]
-    U3["Reviewer"]
-  end
+We—hackers, researchers, artists, teachers, farmers, anyone with a dream to contribute—are being kept outside towering AI gates. **Why should value created by the many be captured by the few?**
 
-  subgraph Token_Holders
-    S1["Staker&nbsp;VAI<br/>(AI-PoS)"]
-  end
+The **Valued AI (VAI)** project exists to fling those gates wide open. We are not building another closed-source citadel; we are laying **an open infrastructure** where data, training effort and creativity are **standardised, acknowledged and rewarded transparently** through fifth-generation blockchain technology. There are no mere “users” here—only **co-creators of value**.
 
-  %% ---------- CORE ---------------------------------------------------
-  subgraph Core_Protocol
-    AI_PoW["AI-PoW<br/>Task&nbsp;Pool"]
-    Proposal["Proposal"]
-    Vote["≥&nbsp;80&nbsp;% Vote&nbsp;→&nbsp;Approve"]
-    Mint["Mint&nbsp;VAI&nbsp;▶"]
-    Reputation["Reputation<br/>Trust&nbsp;Layer"]
-  end
+I believe that:
 
-  %% ---------- SERVICES & USERS --------------------------------------
-  subgraph Services
-    Marketplace["AI&nbsp;Marketplace"]
-    Treasury["Treasury<br/>Fee&nbsp;Burn"]
-  end
+- **Intelligence** should flow like air, never monopolised.
+- **Reward** should follow contribution, not capital or clout.
+- **Trust** must rest on cryptography and immutable rules, not promises.
 
-  subgraph End_Users
-    Apps["AI&nbsp;Apps / Chatbot&nbsp;API"]
-  end
+If you share this belief, join us in turning VAI into **the value bloodstream** that nourishes a global AI ecosystem—so that any child, in any village, may call tomorrow’s API with the laughter of today.
 
-  %% ---------- FLOWS --------------------------------------------------
-  U1 -->|"AI&nbsp;Task"| AI_PoW
-  U2 -->|"AI&nbsp;Task"| AI_PoW
-  U3 -->|"Peer&nbsp;Review"| AI_PoW
-  AI_PoW -->|"Validated&nbsp;Result"| Mint
-  S1 -->|"Stake&nbsp;+&nbsp;Vote"| Proposal
-  Proposal --> Vote
-  Vote -->|"Pass"| Mint
-  Vote -->|"Pass"| Marketplace
-  Mint -->|"Reward"| U1
-  Mint -->|"Reward"| S1
-  Mint --> Treasury
-  Marketplace --> Apps
-  Apps -->|"VAI&nbsp;Fee"| Treasury
-  Mint --> Reputation
-  Reputation --> S1
-
-```
+**Ethan Ray**  
+_Initiator of Valued Artificial Intelligence_  
+Frankfurt, 05 May 2025
